@@ -1,0 +1,11 @@
+services:
+  big2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: big2-game:latest
+    container_name: big2-game
+    ports:
+      - "5900:5900"
+    stdin_open: true
+    tty: true
